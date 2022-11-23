@@ -105,11 +105,8 @@ struct MetaballView: View {
     
     var canvas: some View {
         Canvas { context, size in
-            
             context.addFilter(.alphaThreshold(min: 0.8, color: .blue))
-            
             context.addFilter(.blur(radius: 10))
-            
             context.drawLayer { ctx in
                 for index in 1...5 {
                     if let resolvedView = context.resolveSymbol(id: index) {
@@ -117,7 +114,6 @@ struct MetaballView: View {
                     }
                 }
             }
-            
         } symbols: {
             Circle()
                 .fill(.black)
