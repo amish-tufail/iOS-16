@@ -11,7 +11,7 @@ import SwiftUI
 struct iOS16App: App {
     var body: some Scene {
         WindowGroup {
-            CompassView()
+            ContentView()
         }
     }
 }
