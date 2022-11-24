@@ -12,50 +12,48 @@ struct CompassSheet: View {
     @AppStorage("showSheet") var show = true
     
     var body: some View {
-        ScrollView {
-            HStack {
-                VStack(alignment: .leading, spacing: 30) {
-                    InfoRow(title: "Incline", text: "20º")
-                    InfoRow(title: "Elevation", text: "64M")
-                    InfoRow(title: "Latitude", text: "35.08587 E")
-                    InfoRow(title: "Longitude", text: "48.1255 W")
-                    ZStack {
-                        Circle()
-                            .strokeBorder(style: StrokeStyle(lineWidth: 5, dash: [1,2]))
-                            .fill(.white.opacity(0.4))
-                        Circle()
-                            .strokeBorder(style: StrokeStyle(lineWidth: 15, dash: [1,60]))
-                            .fill(.white.opacity(0.4))
-                        Image("arrow").rotationEffect(.degrees(compassHeading.degrees))
-                    }
-                    .frame(width: 93, height: 93)
-                    Spacer()
+        HStack {
+            VStack(alignment: .leading, spacing: 30) {
+                InfoRow(title: "Incline", text: "20º")
+                InfoRow(title: "Elevation", text: "64M")
+                InfoRow(title: "Latitude", text: "35.08587 E")
+                InfoRow(title: "Longitude", text: "48.1255 W")
+                ZStack {
+                    Circle()
+                        .strokeBorder(style: StrokeStyle(lineWidth: 5, dash: [1,2]))
+                        .fill(.white.opacity(0.4))
+                    Circle()
+                        .strokeBorder(style: StrokeStyle(lineWidth: 15, dash: [1,60]))
+                        .fill(.white.opacity(0.4))
+                    Image("arrow").rotationEffect(.degrees(compassHeading.degrees))
                 }
-                .fontWeight(.medium)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .mask {
-                    Rectangle().fill(.linearGradient(colors: [.white, .white, .white.opacity(0.5), .clear], startPoint: .top, endPoint: .bottom))
-                }
-                .opacity(show ? 1 : 0)
-                .blur(radius: show ? 0 : 20)
-                
-                VStack(alignment: .leading, spacing: 20) {
-                    Text("Waypoints".uppercased())
-                        .font(.caption.weight(.medium))
-                        .opacity(0.5)
-                    WaypointView(rotation: 200, degrees: compassHeading.degrees)
-                    WaypointView(title: "Home", icon: "house.fill", color: .red, rotation: 10, degrees: compassHeading.degrees)
-                    WaypointView(title: "Tent", icon: "tent.fill", color: .green, rotation: 90, degrees: compassHeading.degrees)
-                    Spacer()
-                }
-                .frame(maxWidth: .infinity)
-                .opacity(show ? 1 : 0)
-                .blur(radius: show ? 0 : 20)
+                .frame(width: 93, height: 93)
+                Spacer()
             }
-            .foregroundColor(.white)
-            .padding(40)
-            .preferredColorScheme(.dark)
+            .fontWeight(.medium)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .mask {
+                Rectangle().fill(.linearGradient(colors: [.white, .white, .white.opacity(0.5), .clear], startPoint: .top, endPoint: .bottom))
+            }
+            .opacity(show ? 1 : 0)
+            .blur(radius: show ? 0 : 20)
+            
+            VStack(alignment: .leading, spacing: 20) {
+                Text("Waypoints".uppercased())
+                    .font(.caption.weight(.medium))
+                    .opacity(0.5)
+                WaypointView(rotation: 200, degrees: compassHeading.degrees)
+                WaypointView(title: "Home", icon: "house.fill", color: .red, rotation: 10, degrees: compassHeading.degrees)
+                WaypointView(title: "Tent", icon: "tent.fill", color: .green, rotation: 90, degrees: compassHeading.degrees)
+                Spacer()
+            }
+            .frame(maxWidth: .infinity)
+            .opacity(show ? 1 : 0)
+            .blur(radius: show ? 0 : 20)
         }
+        .foregroundColor(.white)
+        .padding(40)
+        .preferredColorScheme(.dark)
     }
 }
 

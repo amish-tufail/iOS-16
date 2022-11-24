@@ -28,6 +28,7 @@
 		96A1666328F75A7400591104 /* CircleLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1666228F75A7400591104 /* CircleLabelView.swift */; };
 		96A1666528F894C900591104 /* ParallaxMotionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1666428F894C900591104 /* ParallaxMotionModifier.swift */; };
 		96B4D2D6292D64E700460928 /* RadialLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B4D2D5292D64E700460928 /* RadialLayoutView.swift */; };
+		96B4D2D8292FC99B00460928 /* TappableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B4D2D7292FC99B00460928 /* TappableView.swift */; };
 		96D7C0002923F3CB009E3C04 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D7BFFF2923F3CB009E3C04 /* GridView.swift */; };
 		96E86AA1284F8A33000AF322 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E86AA0284F8A33000AF322 /* ChartView.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		96A1666228F75A7400591104 /* CircleLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLabelView.swift; sourceTree = "<group>"; };
 		96A1666428F894C900591104 /* ParallaxMotionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxMotionModifier.swift; sourceTree = "<group>"; };
 		96B4D2D5292D64E700460928 /* RadialLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialLayoutView.swift; sourceTree = "<group>"; };
+		96B4D2D7292FC99B00460928 /* TappableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableView.swift; sourceTree = "<group>"; };
 		96D7BFFF2923F3CB009E3C04 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		96E86AA0284F8A33000AF322 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 			children = (
 				960DAA74284EB2AB002F7268 /* iOS16App.swift */,
 				960DAA76284EB2AB002F7268 /* ContentView.swift */,
+				96B4D2D7292FC99B00460928 /* TappableView.swift */,
 				961CB74F29031E5A00BE996A /* ViewThatFitsView.swift */,
 				961CB751290983AF00BE996A /* CardReflectionView.swift */,
 				96E86AA0284F8A33000AF322 /* ChartView.swift */,
@@ -200,6 +203,7 @@
 				960DAA77284EB2AB002F7268 /* ContentView.swift in Sources */,
 				96A1666528F894C900591104 /* ParallaxMotionModifier.swift in Sources */,
 				9688BA60284FB63C009F75CE /* NavigationStackView.swift in Sources */,
+				96B4D2D8292FC99B00460928 /* TappableView.swift in Sources */,
 				960DAA75284EB2AB002F7268 /* iOS16App.swift in Sources */,
 				961CB752290983AF00BE996A /* CardReflectionView.swift in Sources */,
 				9614579429004D4300C0D8ED /* GooeyView.swift in Sources */,

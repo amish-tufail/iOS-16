@@ -10,14 +10,32 @@ import SwiftUI
 struct NavigationStackView: View {
     var body: some View {
         NavigationStack {
-            List(items) { item in
+            List(navigationItems) { item in
                 NavigationLink(value: item) {
-                    Text(item.title)
+                    Label(item.title, systemImage: item.icon)
+                        .foregroundColor(.primary)
                 }
             }
-            .navigationTitle("Navigation Stack")
-            .navigationDestination(for: FoodItem.self) { item in
-                ChartView()
+            .listStyle(.plain)
+            .navigationTitle("SwiftUI apps")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(for: NavigationItem.self) { item in
+                switch item.menu {
+                case .compass:
+                    CompassView()
+                case .card:
+                    CardReflectionView()
+                case .charts:
+                    ChartView()
+                case .radial:
+                    RadialLayoutView()
+                case .halfsheet:
+                    HalfSheetView()
+                case .gooey:
+                    GooeyView()
+                case .actionbutton:
+                    MetaballView()
+                }
             }
         }
     }
@@ -29,14 +47,29 @@ struct NavigationStackView_Previews: PreviewProvider {
     }
 }
 
-struct FoodItem: Identifiable, Hashable {
-    var id = UUID()
-    var title: String
+enum Menu: String {
+    case compass
+    case card
+    case charts
+    case radial
+    case halfsheet
+    case gooey
+    case actionbutton
 }
 
-var items = [
-    FoodItem(title: "Title 1"),
-    FoodItem(title: "Title 2"),
-    FoodItem(title: "Title 3"),
-    FoodItem(title: "Title 4")
+struct NavigationItem: Identifiable, Hashable {
+    var id = UUID()
+    var title: String
+    var icon: String
+    var menu: Menu
+}
+
+var navigationItems = [
+    NavigationItem(title: "Compass App", icon: "safari", menu: .compass),
+    NavigationItem(title: "3D Card", icon: "lanyardcard", menu: .card),
+    NavigationItem(title: "Radial Layout", icon: "clock", menu: .radial),
+    NavigationItem(title: "Gooey Action Button", icon: "plus.circle", menu: .actionbutton),
+    NavigationItem(title: "Gooey Menu", icon: "drop", menu: .gooey),
+    NavigationItem(title: "Charts", icon: "chart.xyaxis.line", menu: .charts),
+    NavigationItem(title: "Half Sheet", icon: "rectangle.portrait.bottomhalf.filled", menu: .halfsheet),
 ]

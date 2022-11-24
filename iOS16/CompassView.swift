@@ -40,7 +40,6 @@ struct CompassView: View {
                 .animation(.easeOut(duration: 0.5), value: show)
         }
         .gesture(drag)
-        .preferredColorScheme(.dark)
     }
     
     var flashlight: some View {

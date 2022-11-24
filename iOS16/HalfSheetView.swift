@@ -15,7 +15,7 @@ struct HalfSheetView: View {
             showSheet = true
         }
         .sheet(isPresented: $showSheet) {
-            CompassSheet()
+            NavigationStackView()
                 .presentationDetents([.height(200), .medium, .large])
                 .presentationDragIndicator(.automatic)
         }
@@ -25,6 +25,5 @@ struct HalfSheetView: View {
 struct HalfSheetView_Previews: PreviewProvider {
     static var previews: some View {
         HalfSheetView()
-            .preferredColorScheme(.dark)
     }
 }
