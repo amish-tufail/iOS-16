@@ -10,7 +10,7 @@ import SwiftUI
 struct CompassView: View {
     @ObservedObject var manager = MotionManager()
     @ObservedObject var compassHeading = CompassHeading()
-    @AppStorage("showSheet") var show = false
+    @State var show = false
     @State var translation: CGSize = .zero
     @State var location: CGPoint = .zero
     @State var isDragging = false
@@ -324,7 +324,7 @@ struct CompassView: View {
     }
     
     var sheet: some View {
-        CompassSheet()
+        CompassSheet(degrees: $compassHeading.degrees, show: $show)
             .background(.black.opacity(0.5))
             .background(.ultraThinMaterial)
             .cornerRadius(50)

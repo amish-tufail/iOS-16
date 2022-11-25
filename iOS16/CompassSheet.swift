@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct CompassSheet: View {
-    @ObservedObject var compassHeading = CompassHeading()
-    @AppStorage("showSheet") var show = true
+    @Binding var degrees: Double
+    @Binding var show: Bool
     
     var body: some View {
         HStack {
@@ -20,12 +20,10 @@ struct CompassSheet: View {
                 InfoRow(title: "Longitude", text: "48.1255 W")
                 ZStack {
                     Circle()
-                        .strokeBorder(style: StrokeStyle(lineWidth: 5, dash: [1,2]))
-                        .fill(.white.opacity(0.4))
+                        .strokeBorder(.white.opacity(0.4), style: StrokeStyle(lineWidth: 5, dash: [1,2]))
                     Circle()
-                        .strokeBorder(style: StrokeStyle(lineWidth: 15, dash: [1,60]))
-                        .fill(.white.opacity(0.4))
-                    Image("arrow").rotationEffect(.degrees(compassHeading.degrees))
+                        .strokeBorder(.white.opacity(0.4), style: StrokeStyle(lineWidth: 15, dash: [1,60]))
+                    Image("arrow").rotationEffect(.degrees(degrees))
                 }
                 .frame(width: 93, height: 93)
                 Spacer()
@@ -42,9 +40,9 @@ struct CompassSheet: View {
                 Text("Waypoints".uppercased())
                     .font(.caption.weight(.medium))
                     .opacity(0.5)
-                WaypointView(rotation: 200, degrees: compassHeading.degrees)
-                WaypointView(title: "Home", icon: "house.fill", color: .red, rotation: 10, degrees: compassHeading.degrees)
-                WaypointView(title: "Tent", icon: "tent.fill", color: .green, rotation: 90, degrees: compassHeading.degrees)
+                WaypointView(rotation: 200, degrees: degrees)
+                WaypointView(title: "Home", icon: "house.fill", color: .red, rotation: 10, degrees: degrees)
+                WaypointView(title: "Tent", icon: "tent.fill", color: .green, rotation: 90, degrees: degrees)
                 Spacer()
             }
             .frame(maxWidth: .infinity)
@@ -59,7 +57,7 @@ struct CompassSheet: View {
 
 struct CompassSheet_Previews: PreviewProvider {
     static var previews: some View {
-        CompassSheet()
+        CompassSheet(degrees: .constant(0), show: .constant(true))
             .ignoresSafeArea(edges: .bottom)
     }
 }
