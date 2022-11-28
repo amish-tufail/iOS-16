@@ -26,13 +26,16 @@ struct RadialLayoutView: View {
                     Text("\(item)")
                         .font(.system(.title, design: .rounded))
                         .bold()
+                        .foregroundColor(.black)
                 }
             }
             .frame(width: 240)
             
             RadialLayout {
                 ForEach(icons, id: \.self) { item in
-                    Circle().frame(width: 44)
+                    Circle()
+                        .foregroundColor(.black)
+                        .frame(width: 44)
                         .overlay(Image(systemName: item)
                             .foregroundColor(.white))
                 }
@@ -47,6 +50,7 @@ struct RadialLayoutView: View {
                 ForEach(numbers, id: \.self) { item in
                     Text("\(item * 5)")
                         .font(.caption)
+                        .foregroundColor(.black)
                 }
             }
             .frame(width: 360)

@@ -32,7 +32,7 @@ struct ContentView: View {
             
             GeometryReader { proxy in
                 Color.black.opacity(0.0001)
-                    .frame(height: proxy.safeAreaInsets.top)
+                    .frame(height: proxy.safeAreaInsets.top + 100)
                     .ignoresSafeArea()
                     .onTapGesture(count: 2) {
                         showMenu = true
