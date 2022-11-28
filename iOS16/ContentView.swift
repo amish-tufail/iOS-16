@@ -27,7 +27,7 @@ struct ContentView: View {
             case .gooey:
                 GooeyView()
             case .actionbutton:
-                MetaballView()
+                ActionButtonView()
             }
             
             GeometryReader { proxy in

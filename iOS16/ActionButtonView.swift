@@ -1,5 +1,5 @@
 //
-//  MetaballView.swift
+//  ActionButtonView.swift
 //  iOS16
 //
 //  Created by Meng To on 2022-09-29.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MetaballView: View {
+struct ActionButtonView: View {
     @State var dragOffset: CGSize = .zero
     @State var show = false
     @ObservedObject var manager = MotionManager()
@@ -155,8 +155,8 @@ struct MetaballView: View {
     }
 }
 
-struct MetaballView_Previews: PreviewProvider {
+struct ActionButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        MetaballView()
+        ActionButtonView()
     }
 }

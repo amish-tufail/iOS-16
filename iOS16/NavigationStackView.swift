@@ -34,7 +34,7 @@ struct NavigationStackView: View {
                 case .gooey:
                     GooeyView()
                 case .actionbutton:
-                    MetaballView()
+                    ActionButtonView()
                 }
             }
         }
