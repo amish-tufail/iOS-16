@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @AppStorage("menu") var menu: Menu = .compass
     @State var showMenu = false
+    @GestureState var press = false
     
     var body: some View {
         ZStack {
@@ -29,31 +30,24 @@ struct ContentView: View {
             case .actionbutton:
                 ActionButtonView()
             }
-            
-            GeometryReader { proxy in
-                Color.black.opacity(0.0001)
-                    .frame(height: proxy.safeAreaInsets.top + 100)
-                    .ignoresSafeArea()
-                    .onTapGesture(count: 2) {
-                        showMenu = true
-                    }
-            }
         }
+        .overlay(
+            MessageView()
+        )
+        .simultaneousGesture(longPress)
         .sheet(isPresented: $showMenu) {
-            List(navigationItems) { item in
-                Button {
-                    menu = item.menu
-                    showMenu = false
-                } label: {
-                    Label("\(item.title)", systemImage: item.icon)
-                }
-                .padding(8)
-                .foregroundColor(.primary)
-            }
-            .listStyle(.plain)
-            .presentationDetents([.medium, .large])
-            .padding(.top, 20)
+            MenuView(showMenu: $showMenu)
         }
+    }
+    
+    var longPress: some Gesture {
+        LongPressGesture(minimumDuration: 1)
+            .updating($press) { currentState, gestureState, transaction in
+                gestureState = currentState
+            }
+            .onEnded { value in
+                showMenu = true
+            }
     }
 }
 

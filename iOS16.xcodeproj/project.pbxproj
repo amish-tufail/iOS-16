@@ -27,6 +27,8 @@
 		96A1666128F745E400591104 /* InnerShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1666028F745E400591104 /* InnerShadowView.swift */; };
 		96A1666328F75A7400591104 /* CircleLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1666228F75A7400591104 /* CircleLabelView.swift */; };
 		96A1666528F894C900591104 /* ParallaxMotionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1666428F894C900591104 /* ParallaxMotionModifier.swift */; };
+		96A53EA729364F380026F107 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A53EA629364F380026F107 /* MenuView.swift */; };
+		96A53EA9293664260026F107 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A53EA8293664260026F107 /* MessageView.swift */; };
 		96B4D2D6292D64E700460928 /* RadialLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B4D2D5292D64E700460928 /* RadialLayoutView.swift */; };
 		96D7C0002923F3CB009E3C04 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D7BFFF2923F3CB009E3C04 /* GridView.swift */; };
 		96E86AA1284F8A33000AF322 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E86AA0284F8A33000AF322 /* ChartView.swift */; };
@@ -54,6 +56,8 @@
 		96A1666028F745E400591104 /* InnerShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerShadowView.swift; sourceTree = "<group>"; };
 		96A1666228F75A7400591104 /* CircleLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLabelView.swift; sourceTree = "<group>"; };
 		96A1666428F894C900591104 /* ParallaxMotionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxMotionModifier.swift; sourceTree = "<group>"; };
+		96A53EA629364F380026F107 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		96A53EA8293664260026F107 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		96B4D2D5292D64E700460928 /* RadialLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialLayoutView.swift; sourceTree = "<group>"; };
 		96D7BFFF2923F3CB009E3C04 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		96E86AA0284F8A33000AF322 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
@@ -91,6 +95,10 @@
 			children = (
 				960DAA74284EB2AB002F7268 /* iOS16App.swift */,
 				960DAA76284EB2AB002F7268 /* ContentView.swift */,
+				96A53EA8293664260026F107 /* MessageView.swift */,
+				96A53EA629364F380026F107 /* MenuView.swift */,
+				96A1665E28F5C98D00591104 /* CompassView.swift */,
+				961CB753290C279D00BE996A /* CompassSheet.swift */,
 				961CB74F29031E5A00BE996A /* ViewThatFitsView.swift */,
 				961CB751290983AF00BE996A /* CardReflectionView.swift */,
 				96E86AA0284F8A33000AF322 /* ChartView.swift */,
@@ -103,8 +111,6 @@
 				960B1E2628EF2C3300D761AE /* BlendingModesView.swift */,
 				96A1665C28F07E2700591104 /* VideoView.swift */,
 				96D7BFFF2923F3CB009E3C04 /* GridView.swift */,
-				96A1665E28F5C98D00591104 /* CompassView.swift */,
-				961CB753290C279D00BE996A /* CompassSheet.swift */,
 				96A1666228F75A7400591104 /* CircleLabelView.swift */,
 				96A1666028F745E400591104 /* InnerShadowView.swift */,
 				96B4D2D9292FD87C00460928 /* Utilities */,
@@ -209,7 +215,9 @@
 				96A1666528F894C900591104 /* ParallaxMotionModifier.swift in Sources */,
 				9688BA60284FB63C009F75CE /* NavigationStackView.swift in Sources */,
 				960DAA75284EB2AB002F7268 /* iOS16App.swift in Sources */,
+				96A53EA9293664260026F107 /* MessageView.swift in Sources */,
 				961CB752290983AF00BE996A /* CardReflectionView.swift in Sources */,
+				96A53EA729364F380026F107 /* MenuView.swift in Sources */,
 				9614579429004D4300C0D8ED /* GooeyView.swift in Sources */,
 				9648CC5C28F8A3C200E7659E /* CompassHeading.swift in Sources */,
 				96A1666128F745E400591104 /* InnerShadowView.swift in Sources */,
