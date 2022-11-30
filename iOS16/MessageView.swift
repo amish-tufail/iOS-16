@@ -25,7 +25,7 @@ struct MessageView: View {
                     }
                 }
             Text("Switching apps".uppercased())
-                .font(.system(size: 40, weight: .bold, width: .condensed))
+                .font(.system(size: 34, weight: .bold, width: .condensed))
             Text("Tap and hold any part of the screen for 1 second to show the menu for switching between apps.")
                 .fontWeight(.medium)
                 .frame(maxWidth: .infinity)
@@ -37,6 +37,7 @@ struct MessageView: View {
                 }
             } label: {
                 Text("Got it")
+                    .fontWeight(.medium)
                     .padding(12)
                     .frame(maxWidth: .infinity)
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke())
@@ -50,6 +51,8 @@ struct MessageView: View {
         .cornerRadius(30)
         .padding(30)
         .opacity(showMessage ? 1 : 0)
+        .offset(y: showMessage ? 0 : 200)
+        .blur(radius: showMessage ? 0 : 20)
     }
 }
 
