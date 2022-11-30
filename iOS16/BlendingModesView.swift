@@ -33,7 +33,7 @@ struct BlendingModesView: View {
     }
     
     var wallpaper: some View {
-        Image("wallpaper2")
+        Image("Wallpaper 2")
             .resizable()
             .aspectRatio(contentMode: .fill)
             .ignoresSafeArea()

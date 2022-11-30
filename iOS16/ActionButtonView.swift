@@ -71,7 +71,7 @@ struct ActionButtonView: View {
         }
         .background(
             ZStack {
-                Image("ui4")
+                Image("UI 1")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .cornerRadius(50)

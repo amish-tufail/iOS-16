@@ -15,23 +15,23 @@ struct CardReflectionView: View {
         ZStack {
             Color("Background").ignoresSafeArea()
             
-            Image("background1")
+            Image("Background 1")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(height: 600)
                 .overlay(
                     ZStack {
-                        Image("logo1")
+                        Image("Logo 1")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 180)
                             .offset(x: translation.width/8, y: translation.height/15)
-                        Image("logo2")
+                        Image("Logo 2")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 400)
                             .offset(x: translation.width/10, y: translation.height/20)
-                        Image("logo3")
+                        Image("Logo 3")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 392, height: 600)
@@ -42,7 +42,7 @@ struct CardReflectionView: View {
                 )
                 .overlay(gloss1.blendMode(.softLight))
                 .overlay(
-                    Image("gloss2")
+                    Image("Gloss 2")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .blendMode(.luminosity)
@@ -100,7 +100,7 @@ struct CardReflectionView: View {
     }
     
     var gloss1: some View {
-        Image("gloss1")
+        Image("Gloss 1")
             .resizable()
             .aspectRatio(contentMode: .fill)
             .mask(
@@ -110,7 +110,7 @@ struct CardReflectionView: View {
     }
     
     var gloss2: some View {
-        Image("gloss2")
+        Image("Gloss 2")
             .resizable()
             .aspectRatio(contentMode: .fill)
             .mask(
