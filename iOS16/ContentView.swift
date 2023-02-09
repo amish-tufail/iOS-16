@@ -36,7 +36,7 @@ struct ContentView: View {
         )
         .simultaneousGesture(longPress)
         .sheet(isPresented: $showMenu) {
-            MenuView(showMenu: $showMenu)
+            MenuView()
         }
     }
     

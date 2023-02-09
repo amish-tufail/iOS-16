@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		960B1E2728EF2C3300D761AE /* BlendingModesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960B1E2628EF2C3300D761AE /* BlendingModesView.swift */; };
-		960B1E2B28EF2CE000D761AE /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 960B1E2A28EF2CE000D761AE /* video.mp4 */; };
 		960DAA75284EB2AB002F7268 /* iOS16App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DAA74284EB2AB002F7268 /* iOS16App.swift */; };
 		960DAA77284EB2AB002F7268 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DAA76284EB2AB002F7268 /* ContentView.swift */; };
 		960DAA79284EB2AC002F7268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960DAA78284EB2AC002F7268 /* Assets.xcassets */; };
@@ -22,7 +21,6 @@
 		9688BA60284FB63C009F75CE /* NavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9688BA5F284FB63C009F75CE /* NavigationStackView.swift */; };
 		9688BA62284FBF83009F75CE /* HalfSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9688BA61284FBF83009F75CE /* HalfSheetView.swift */; };
 		9696E93B28E5DE8D00680DAD /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9696E93A28E5DE8D00680DAD /* ActionButtonView.swift */; };
-		96A1665D28F07E2700591104 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1665C28F07E2700591104 /* VideoView.swift */; };
 		96A1665F28F5C98D00591104 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1665E28F5C98D00591104 /* CompassView.swift */; };
 		96A1666128F745E400591104 /* InnerShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1666028F745E400591104 /* InnerShadowView.swift */; };
 		96A1666328F75A7400591104 /* CircleLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1666228F75A7400591104 /* CircleLabelView.swift */; };
@@ -30,13 +28,13 @@
 		96A53EA729364F380026F107 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A53EA629364F380026F107 /* MenuView.swift */; };
 		96A53EA9293664260026F107 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A53EA8293664260026F107 /* MessageView.swift */; };
 		96B4D2D6292D64E700460928 /* RadialLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B4D2D5292D64E700460928 /* RadialLayoutView.swift */; };
+		96CF124029454A270083A311 /* CustomLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF123F29454A270083A311 /* CustomLayoutView.swift */; };
 		96D7C0002923F3CB009E3C04 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D7BFFF2923F3CB009E3C04 /* GridView.swift */; };
 		96E86AA1284F8A33000AF322 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E86AA0284F8A33000AF322 /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		960B1E2628EF2C3300D761AE /* BlendingModesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendingModesView.swift; sourceTree = "<group>"; };
-		960B1E2A28EF2CE000D761AE /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		960DAA71284EB2AB002F7268 /* iOS16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS16.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		960DAA74284EB2AB002F7268 /* iOS16App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS16App.swift; sourceTree = "<group>"; };
 		960DAA76284EB2AB002F7268 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,7 +49,6 @@
 		9688BA5F284FB63C009F75CE /* NavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackView.swift; sourceTree = "<group>"; };
 		9688BA61284FBF83009F75CE /* HalfSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheetView.swift; sourceTree = "<group>"; };
 		9696E93A28E5DE8D00680DAD /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
-		96A1665C28F07E2700591104 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		96A1665E28F5C98D00591104 /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		96A1666028F745E400591104 /* InnerShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerShadowView.swift; sourceTree = "<group>"; };
 		96A1666228F75A7400591104 /* CircleLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLabelView.swift; sourceTree = "<group>"; };
@@ -59,6 +56,7 @@
 		96A53EA629364F380026F107 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		96A53EA8293664260026F107 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		96B4D2D5292D64E700460928 /* RadialLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialLayoutView.swift; sourceTree = "<group>"; };
+		96CF123F29454A270083A311 /* CustomLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayoutView.swift; sourceTree = "<group>"; };
 		96D7BFFF2923F3CB009E3C04 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		96E86AA0284F8A33000AF322 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,19 +101,18 @@
 				961CB751290983AF00BE996A /* CardReflectionView.swift */,
 				96E86AA0284F8A33000AF322 /* ChartView.swift */,
 				96B4D2D5292D64E700460928 /* RadialLayoutView.swift */,
+				96CF123F29454A270083A311 /* CustomLayoutView.swift */,
 				9688BA5F284FB63C009F75CE /* NavigationStackView.swift */,
 				9688BA61284FBF83009F75CE /* HalfSheetView.swift */,
 				9614579128FEF43800C0D8ED /* AnimatedTextView.swift */,
 				9696E93A28E5DE8D00680DAD /* ActionButtonView.swift */,
 				9614579329004D4300C0D8ED /* GooeyView.swift */,
 				960B1E2628EF2C3300D761AE /* BlendingModesView.swift */,
-				96A1665C28F07E2700591104 /* VideoView.swift */,
 				96D7BFFF2923F3CB009E3C04 /* GridView.swift */,
 				96A1666228F75A7400591104 /* CircleLabelView.swift */,
 				96A1666028F745E400591104 /* InnerShadowView.swift */,
 				96B4D2D9292FD87C00460928 /* Utilities */,
 				960DAA78284EB2AC002F7268 /* Assets.xcassets */,
-				960B1E2A28EF2CE000D761AE /* video.mp4 */,
 				960DAA7A284EB2AC002F7268 /* Preview Content */,
 			);
 			path = iOS16;
@@ -198,7 +195,6 @@
 			files = (
 				960DAA7C284EB2AC002F7268 /* Preview Assets.xcassets in Resources */,
 				960DAA79284EB2AC002F7268 /* Assets.xcassets in Resources */,
-				960B1E2B28EF2CE000D761AE /* video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96D7C0002923F3CB009E3C04 /* GridView.swift in Sources */,
+				96CF124029454A270083A311 /* CustomLayoutView.swift in Sources */,
 				961CB754290C279D00BE996A /* CompassSheet.swift in Sources */,
 				960DAA77284EB2AB002F7268 /* ContentView.swift in Sources */,
 				96A1666528F894C900591104 /* ParallaxMotionModifier.swift in Sources */,
@@ -222,7 +219,6 @@
 				9648CC5C28F8A3C200E7659E /* CompassHeading.swift in Sources */,
 				96A1666128F745E400591104 /* InnerShadowView.swift in Sources */,
 				9688BA62284FBF83009F75CE /* HalfSheetView.swift in Sources */,
-				96A1665D28F07E2700591104 /* VideoView.swift in Sources */,
 				9696E93B28E5DE8D00680DAD /* ActionButtonView.swift in Sources */,
 				96A1666328F75A7400591104 /* CircleLabelView.swift in Sources */,
 				96A1665F28F5C98D00591104 /* CompassView.swift in Sources */,

@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct MenuView: View {
-    @Binding var showMenu: Bool
     @AppStorage("menu") var menu: Menu = .compass
     
     var body: some View {
         List(navigationItems) { item in
             Button {
                 menu = item.menu
-                showMenu = false
             } label: {
                 Label("\(item.title)", systemImage: item.icon)
             }
@@ -30,6 +28,6 @@ struct MenuView: View {
 
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuView(showMenu: .constant(true))
+        MenuView()
     }
 }

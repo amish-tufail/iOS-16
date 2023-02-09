@@ -23,7 +23,7 @@ struct CompassSheet: View {
                         .strokeBorder(.white.opacity(0.4), style: StrokeStyle(lineWidth: 5, dash: [1,2]))
                     Circle()
                         .strokeBorder(.white.opacity(0.4), style: StrokeStyle(lineWidth: 15, dash: [1,60]))
-                    Image("arrow").rotationEffect(.degrees(degrees))
+                    Image("Arrow").rotationEffect(.degrees(degrees))
                 }
                 .frame(width: 93, height: 93)
                 Spacer()
