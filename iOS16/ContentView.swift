@@ -34,7 +34,8 @@ struct ContentView: View {
         .overlay(
             MessageView()
         )
-        .simultaneousGesture(longPress)
+        .gesture(longPress)
+        .onTapGesture {}
         .sheet(isPresented: $showMenu) {
             MenuView()
         }

@@ -77,7 +77,7 @@ struct ActionButtonView: View {
                     .cornerRadius(50)
                     .overlay(
                         RoundedRectangle(cornerRadius: 50)
-                            .stroke(.linearGradient(colors: [Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.1836713576)), Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.5242911838)), Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0))], startPoint: UnitPoint(x: 0, y: 0), endPoint: UnitPoint(x: abs(manager.roll) * 5, y: abs(manager.roll) * 5)))
+                            .stroke(.linearGradient(colors: [Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.501008899)), Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7990480132)), Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0))], startPoint: UnitPoint(x: 0, y: 0), endPoint: UnitPoint(x: abs(manager.roll) * 5, y: abs(manager.roll) * 5)))
                             .opacity(show ? 1 : 0)
                     )
                     .overlay(
@@ -87,14 +87,16 @@ struct ActionButtonView: View {
                             .opacity(show ? 1 : 0)
                         }
                     )
-                    .scaleEffect(show ? 0.95 : 1)
+                    .scaleEffect(show ? 0.8 : 1)
+                    .rotation3DEffect(.degrees(show ? 20 : 0), axis: (x: 1-manager.pitch, y: manager.roll, z: 0))
+                    .shadow(color: .black.opacity(0.5), radius: 50, x: 0, y: 50)
                 
                 LinearGradient(colors: [Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)), Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))], startPoint: .topLeading, endPoint: .bottomTrailing)
                     .opacity(show ? 1 : 0)
                     .blendMode(.overlay)
             }
         )
-        .background(.black)
+        .background(.gray)
         .ignoresSafeArea()
         .preferredColorScheme(.dark)
     }
